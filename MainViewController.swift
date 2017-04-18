@@ -10,11 +10,20 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBAction func exit(_ sender: UIButton) {
+        UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+       
 
         // Do any additional setup after loading the view.
     }
+   
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -22,6 +31,7 @@ class MainViewController: UIViewController {
     }
     
 
+   
     /*
     // MARK: - Navigation
 
