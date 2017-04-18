@@ -429,8 +429,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 contact.bodyA.node?.removeFromParent()
             }
             
-            //let sound = SKAction.playSoundFileNamed("coin.wav", waitForCompletion: false)
-            //run(sound)
             
             score += 1
             
